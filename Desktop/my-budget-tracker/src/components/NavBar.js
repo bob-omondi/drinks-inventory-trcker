@@ -13,7 +13,7 @@ function NavBar() {
         <Container>
           <Navbar/>
           <NavLink to="/about">BudgetFlow</NavLink>
-          <NavLink to="/main"></NavLink>
+          <NavLink to="/main">Explore</NavLink>
           <NavLink to="#home"></NavLink>
         </Container>
       </Navbar>

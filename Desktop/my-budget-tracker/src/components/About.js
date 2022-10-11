@@ -24,7 +24,6 @@ const About = () => {
             Here you understand your income and spending. 
           </p >
           <a href="/#home">Home</a>
-           <a href="/main" >Explore</a> 
         </div>
       </section> 
     </div>
@@ -33,8 +32,8 @@ const About = () => {
   )
 }
 const StyledApp = styled.div`
-padding-top: 100px;
-padding-bottom: 100px;
+padding-top: 300px;
+padding-bottom: 600px;
 position: relative;
 background-color: blue;
 background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(0,152,155,1) 0.1%, rgba(0,94,120,1) 94.2% );
