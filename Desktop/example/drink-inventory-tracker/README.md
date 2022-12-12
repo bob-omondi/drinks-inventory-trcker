@@ -1,76 +1,56 @@
-# Password Protection Lab
+DRINKSOLOGY
+Author
+Bob Omondi
 
-## Learning Goals
+Description
+Drinksoloy, a drink inventory management system .
+Frontend Link
 
-- Implement login and signup with a password
-- Use `has_secure_password` to hash and salt passwords
+Project Features
+Navigation Bar - navigating through different pages(components)
+Home Page - Drinksoloy start section.
+Login page - Login inorder to make add products .
+Sign up page - For new users.
+Technologies Used
+Frontend
+ReactJs
+CSS
+Backend
+SQLite
+Ruby on Rails
+Postgresql
+Setup instructions
+Clone the repository
+git@github.com:bob-omondi/drinks-inventory-trcker.git
 
-## Introduction
+Install dependecies
 
-We're going to make a Rails app that covers a simple authentication flow: users
-can create accounts, log in, and log out.
-
-There is some starter code in place for a Rails API backend and a React frontend.
-To get set up, run:
-
-```sh
 bundle install
+rails db:create
 npm install --prefix client
-```
+You can use the following commands to run the application:
 
-You can work on this lab by running the tests with `learn test`. It will also be
-helpful to see what's happening during the request/response cycle by running the
-app in the browser. You can run the Rails server with:
+Backend
 
-```sh
 rails s
-```
 
-And you can run React in another terminal with:
+Frontend
 
-```sh
 npm start --prefix client
-```
 
-You don't have to make any changes to the React code to get this lab working.
+Run the Frontend on: http://localhost:4000
+Run the Backend on: http://localhost:3000/new
+Contributions
+Fork this repository.
+Create a branch: git checkout -b <branch_name>.
+Make your changes and commit them: git commit -m '<commit_message>'
+Push to the original branch: git push origin <project_name>/<location>
+Create the pull request.
 
-## Setup
+Contact Informantion
+Incase of any enquiries or contributions, be sure to email me at : noela.murugi@student.moringaschool.com
 
-Our app has three pages:
-
-1. A signup page, where the user enters their username, password, and password
-   confirmation.
-2. A login page, where the user submits their username and password and are then
-   logged in.
-3. A user homepage, which says, "Welcome, ${username}!"
-
-We're not covering validations in this lab, so don't worry about those.
-(Password validations are hard to get right anyway; it's surprisingly easy to
-produce rules which decrease password security rather than enhance it.)
-
-Users should not be able to log in if they enter an incorrect password.
-
-## Instructions
-
-1. Create a `User` model, and migrations for `users` table with `username` and
-   `password_digest` columns. Make sure to use `password_digest`, not
-   `password`, in your migration; and include the `has_secure_password` macro in
-   your model.
-
-2. Create a `UsersController` with a `create` method that responds to a
-   `POST /signup` request. It should create a new user; save their hashed
-   password in the database; save the user's ID in the session hash; and return
-   the user object in the JSON response.
-
-3. Add a `show` method to your `UsersController` that response to a `GET /me`
-   request. If the user is authenticated, return the user object in the JSON
-   response.
-
-4. Create a Sessions controller with a `create` action for logging in, and a
-   `destroy` action for logging out.
-
-Happy coding!
-
-## Resources
-
-- [has_secure_password](https://api.rubyonrails.org/classes/ActiveModel/SecurePassword/ClassMethods.html)
+License
+MIT Licence
+Copyright (c) 2022 DRINKSOLOGY
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software. THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
