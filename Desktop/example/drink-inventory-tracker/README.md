@@ -39,7 +39,7 @@ Frontend
 npm start --prefix client
 
 Run the Frontend on: http://localhost:4000
-Run the Backend on: http://localhost:3000/new
+Run the Backend on: http://localhost:3000/drinks
 Contributions
 Fork this repository.
 Create a branch: git checkout -b <branch_name>.
