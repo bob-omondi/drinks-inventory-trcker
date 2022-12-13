@@ -48,7 +48,7 @@ Push to the original branch: git push origin <project_name>/<location>
 Create the pull request.
 
 Contact Informantion
-Incase of any enquiries or contributions, be sure to email me at : noela.murugi@student.moringaschool.com
+Incase of any enquiries or contributions, be sure to email me at : bob.omondi@student.moringaschool.com
 
 License
 MIT Licence
